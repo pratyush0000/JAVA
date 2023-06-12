@@ -15,19 +15,17 @@ public class Test {
         System.out.println("Do you want to enter another number? Y/N");
         int c;
         String ques = num.next();
-        switch (ques){
-            case "Y":
+        switch (ques) {
+            case "Y" -> {
                 System.out.println("Enter 3rd number:");
                 c = num.nextInt();
-                break;
-            case "N":
-                c=0;
-                break;
-            default:
+            }
+            case "N" -> c = 0;
+            default -> {
                 System.out.println("wrong option");
                 System.out.println("adding the 2 numbers...");
-                c=0;
-                break;
+                c = 0;
+            }
         }
         sum(a,b,c);
     }
