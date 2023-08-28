@@ -29,5 +29,10 @@ public class arrya2d1 {
         for(int row = 0;row < array2d.length;row++){
             System.out.println(Arrays.toString(array2d[row]));
         }
+
+        System.out.println("method 3:");
+        for(int[] a : array2d){
+            System.out.println(Arrays.toString(a));
+        }
     }
 }
